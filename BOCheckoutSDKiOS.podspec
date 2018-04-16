@@ -13,5 +13,6 @@ Pod::Spec.new do |spec|
   spec.platform         = :ios, '8.0'
   spec.swift_version    = "3.2"
   spec.requires_arc     = true
-  spec.source_files     = 'BOCheckoutSDKiOS/**/*.{h,m}'
+  spec.source_files     = 'BOCheckoutSDKiOS/**/*.{swift}'
+  spec.ios.vendored_frameworks = 'BOCheckoutSDKiOS.framework'
 end
